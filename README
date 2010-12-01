@@ -1,0 +1,23 @@
+ An easy hook for the Pecan Web Framework that provides some information 
+ in a per request basis for development purposes.
+
+ Currently supported:
+
+ * Request Method 
+ * Request Response Status 
+ * Request URL
+ * Controller Method Hit
+ * Pecan Context information 
+ * Pecan Hooks enabled
+ * Parameters
+ 
+ It is not yet configurable since it only displays a small amount of data, but
+ feature releases should include a way to properly configure the verbosity of the 
+ output.
+
+ Once installed, the proper way of adding it to your Pecan application is::
+
+    from pecanraw import RawHook
+
+    app = make_app(RootController(), hooks=[RawHook()]
+
