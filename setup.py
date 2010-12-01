@@ -5,7 +5,7 @@ from setuptools import setup
 tests_require = ['pytest', 'webtest']
 
 setup(
-    name = "pecan-raw",
+    name = "pecanraw",
     version = "0.0.1",
     packages = ['pecanraw'],
     include_package_data=True,
