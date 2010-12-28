@@ -6,7 +6,7 @@ tests_require = ['pytest', 'webtest']
 
 setup(
     name = "pecanraw",
-    version = "0.0.1",
+    version = "0.0.2",
     packages = ['pecanraw'],
     include_package_data=True,
     package_data = {
@@ -43,7 +43,7 @@ setup(
 
 
  """,
-
+   zip_safe = False,
    classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
