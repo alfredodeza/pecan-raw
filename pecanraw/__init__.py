@@ -21,7 +21,7 @@ class RawHook(PecanHook):
             print error
 
     def get_controller(self, state):
-        path = state.request.path.split('/')[1:]
+        path = state.request.pecan['routing_path'].split('/')[1:]
         controller, reminder = lookup_controller(state.app.root, path)
         return controller.__str__().split()[2]
 
